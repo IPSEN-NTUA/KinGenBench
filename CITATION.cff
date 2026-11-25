@@ -19,7 +19,7 @@ authors:
   - family-names: Kokossis
     given-names: Antonis
     affiliation: "National Technical University of Athens"
-repository-code: "https://github.com/stefanosxenios/TODO-repo-name"
+repository-code: "https://github.com/IPSEN-NTUA/KinGenBench"
 license: MIT
 preferred-citation:
   type: article

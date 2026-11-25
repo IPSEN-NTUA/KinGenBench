@@ -1,5 +1,7 @@
 # A Benchmark for Generative Modeling of Enzyme Kinetic Parameters
 
+[![Data DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24532943.svg)](https://doi.org/10.5281/zenodo.24532943)
+
 Code and data for:
 
 > **Xenios, S., Doulaveris, A., Trokanas, N., Mexis, K., Kokossis, A. (2026).**
@@ -62,7 +64,7 @@ results/metrics/                   # published metric tables (per seed and mean 
 docs/EXTERNAL_MODELS.md            # how to benchmark your own generator
 ```
 
-**Hosted on Zenodo** (DOI: TODO): the generated K<sub>m</sub> sets of all reference runs in
+**Hosted on Zenodo** ([doi:10.5281/zenodo.24532943](https://doi.org/10.5281/zenodo.24532943)): the generated K<sub>m</sub> sets of all reference runs in
 the paper, the trained Scenario III networks, and the complete simulation and scoring outputs.
 These are needed only to **regenerate the paper figures** or to compare model-level
 distributions (KPI distributions, K<sub>m</sub> embeddings, per-model R²) with ours. Unpack the
