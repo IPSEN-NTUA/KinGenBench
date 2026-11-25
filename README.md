@@ -148,13 +148,14 @@ for the rules that keep a comparison fair.
 
 One run trains all six variants for one scenario and seed, saves the networks to
 `outputs/generators/`, and writes the generated K<sub>m</sub> sets to
-`outputs/synthetic_parameters/`. Seeds used in the paper:
+`outputs/synthetic_parameters/`. Run each scenario with seeds **65, 66 and 67**
+(one command per seed).
 
-| Scenario | Seeds | Continuous target (`--kpi-target-mode`) |
-|---|---|---|
-| I `pgi` | 45, 46, 66, 67 (cGAN-cont: 65, 66, 67) | `threshold` |
-| II `pgi_pgl` | 45, 66, 67 (cGAN-cont: 65, 66, 67) | `threshold` |
-| III `all_mutants` | 65, 66, 67 | `class` (main), `percentile` 5% (supplement; cVAE-cont / NF-cont seeds 45, 66, 67) |
+| Scenario | Continuous target (`--kpi-target-mode`) |
+|---|---|
+| I `pgi` | `threshold` |
+| II `pgi_pgl` | `threshold` |
+| III `all_mutants` | `class` (main), `percentile` 5% (supplement) |
 
 Every target lies inside the discrete positive class, so the discrete and continuous variants
 aim at the same performance class: `threshold` sets each KPI to its labelling threshold, and
@@ -162,11 +163,11 @@ aim at the same performance class: `threshold` sets each KPI to its labelling th
 model (files suffixed `_cls`).
 
 ```bash
-# Scenario I (one command per seed)
-python scripts/generate_scenarios.py --scenario pgi --pgi-threshold 10 --seed 45 --kpi-target-mode threshold
+# Scenario I
+python scripts/generate_scenarios.py --scenario pgi --pgi-threshold 10 --seed 65 --kpi-target-mode threshold
 
 # Scenario II
-python scripts/generate_scenarios.py --scenario pgi_pgl --seed 45 --kpi-target-mode threshold
+python scripts/generate_scenarios.py --scenario pgi_pgl --seed 65 --kpi-target-mode threshold
 
 # Scenario III (main)
 python scripts/generate_scenarios.py --scenario all_mutants --seed 65 --kpi-target-mode class
