@@ -4,7 +4,7 @@
 
 Code and data for:
 
-> **Xenios, S., Doulaveris, A., Trokanas, N., Mexis, K., Kokossis, A. (2026).**
+> **Xenios, S., Doulaveris, A., Mexis, K., Kokossis, A. (2026).**
 > *A Benchmark for Generative Modeling of High-Dimensional Enzyme Kinetic Parameters of Metabolic Networks.* DOI: TODO
 
 The benchmark asks a conditional generative model to produce **new kinetic parameter

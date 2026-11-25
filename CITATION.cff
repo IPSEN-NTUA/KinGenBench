@@ -10,9 +10,6 @@ authors:
   - family-names: Doulaveris
     given-names: Alexandros
     affiliation: "National Technical University of Athens"
-  - family-names: Trokanas
-    given-names: Nikos
-    affiliation: "National Technical University of Athens"
   - family-names: Mexis
     given-names: Konstantinos
     affiliation: "National Technical University of Athens"
@@ -29,8 +26,6 @@ preferred-citation:
       given-names: Stefanos
     - family-names: Doulaveris
       given-names: Alexandros
-    - family-names: Trokanas
-      given-names: Nikos
     - family-names: Mexis
       given-names: Konstantinos
     - family-names: Kokossis
