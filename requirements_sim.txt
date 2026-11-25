@@ -1,0 +1,59 @@
+# env_benchmark_sim - simulation / scoring / evaluation / figure environment
+# Use for: scripts/run_pgi_pipeline.py
+#          scripts/run_multi_perturbation_pipeline.py
+#          scripts/evaluate.py
+#          scripts/build_oracle_kpi.py
+#          paper/build_paper_outputs_*.py
+#
+# Python 3.8 (as in the GENKI simulation environment).
+#
+# ── IMPORTANT — skimpy and pytfa must be installed BEFORE this file ────────
+#
+# skimpy requires system-level libraries (SUNDIALS ODE solver, gfortran) and
+# is NOT available on PyPI. Install it from the official GitHub release:
+#
+#   Official releases:  https://github.com/EPFL-LCSB/skimpy/releases
+#
+#   conda create -n env_benchmark_sim python=3.8
+#   conda activate env_benchmark_sim
+#
+#   Option A — conda package (Linux / macOS, recommended):
+#     conda config --add channels bioconda
+#     conda config --add channels conda-forge
+#     conda config --set channel_priority strict
+#     conda install weilandtd::skimpy
+#
+#   Option B — from source (all platforms):
+#     # First install system libraries (Ubuntu/Debian):
+#     sudo apt install gfortran libsundials-dev libflint-dev libgmp-dev
+#     # Then clone and install:
+#     git clone https://github.com/EPFL-LCSB/skimpy.git /path/to/skimpy
+#     pip install -e /path/to/skimpy
+#
+#   pytfa is installed automatically as a skimpy dependency; if not:
+#     pip install pytfa
+#
+#   For commercial solver setup (CPLEX / GUROBI, required for pytfa sampling):
+#     https://github.com/EPFL-LCSB/skimpy/blob/master/SOLVERS.md
+#
+# ── After skimpy is installed, install the remaining packages ──────────────
+#   pip install -r requirements_sim.txt
+#   pip install -e .            # optional: makes `import benchmark` work everywhere
+# ──────────────────────────────────────────────────────────────────────────
+
+# Plotting and figure output
+matplotlib>=3.6
+seaborn>=0.12
+
+# Parallel simulation
+joblib>=1.2
+
+# UpSet / degree plots (multi-perturbation scenarios)
+upsetplot>=0.8
+
+# Km-space embedding figure (optional; PCA is used if missing)
+umap-learn>=0.5
+
+# Notebook support (optional, for interactive use)
+ipykernel
+jupyter

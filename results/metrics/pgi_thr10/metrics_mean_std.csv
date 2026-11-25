@@ -1,0 +1,7 @@
+variant,pct_survived__mean,pct_survived__std,pct_survived__count,mean_KPI__mean,mean_KPI__std,mean_KPI__count,pct_below_p10__mean,pct_below_p10__std,pct_below_p10__count,pct_top1__mean,pct_top1__std,pct_top1__count,pct_outperform_best__mean,pct_outperform_best__std,pct_outperform_best__count,precision__mean,precision__std,precision__count,recall__mean,recall__std,recall__count,extrap_vs_top__mean,extrap_vs_top__std,extrap_vs_top__count,extrap_vs_full__mean,extrap_vs_full__std,extrap_vs_full__count
+CVAE,100.0,0.0,4,7.4497,0.1695,4,87.5125,5.7117,4,11.7625,3.0864,4,0.0,0.0,4,1.0,0.0,4,0.0,0.0,4,0.7375,0.0013,4,0.7676,0.0021,4
+GAN,78.9,3.3899,4,9.6661,0.266,4,38.3121,3.0001,4,7.1318,0.7456,4,0.0782,0.0585,4,0.9863,0.0023,4,0.038,0.011,4,0.8771,0.006,4,0.9888,0.0085,4
+NF,73.655,0.7576,4,9.7254,0.0991,4,36.8083,1.1801,4,6.156,0.7717,4,0.1367,0.0542,4,0.9404,0.0014,4,0.3653,0.0058,4,0.938,0.0007,4,1.0813,0.0012,4
+CVAE-cont,100.0,0.0,4,7.5326,0.1486,4,87.95,7.0014,4,4.1,1.8019,4,0.0,0.0,4,1.0,0.0,4,0.0,0.0,4,0.7372,0.0016,4,0.7654,0.003,4
+GAN-cont,79.35,1.7776,3,9.4273,0.5316,3,32.7503,9.6694,3,3.2764,1.5256,3,0.0,0.0,3,0.9782,0.0014,3,0.0288,0.0063,3,0.8719,0.0013,3,0.9788,0.0038,3
+NF-cont,74.7115,0.386,4,9.2732,0.1006,4,37.6372,1.4635,4,4.6928,0.4414,4,0.0678,0.0783,4,0.9381,0.0045,4,0.3719,0.0072,4,0.9396,0.001,4,1.084,0.0017,4

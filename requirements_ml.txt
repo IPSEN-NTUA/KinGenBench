@@ -1,0 +1,33 @@
+# env_benchmark_ml - training / generation environment
+# Use for: scripts/build_scenarios.py, scripts/generate_scenarios.py
+#
+# Same environment as the GENKI cVAE training (Python 3.10, TensorFlow 2.12-2.15),
+# extended with PyTorch + nflows for the WGAN-GP and RealNVP generators.
+# Does NOT require skimpy or pytfa.
+#
+# Install:
+#   conda create -n env_benchmark_ml python=3.10
+#   conda activate env_benchmark_ml
+#   pip install -r requirements_ml.txt
+#   pip install -e .            # optional: makes `import benchmark` work everywhere
+
+# cVAE (as in GENKI)
+tensorflow>=2.12,<2.16
+keras>=2.12,<3
+h5py>=3.7
+
+# WGAN-GP and RealNVP normalizing flow
+torch>=2.0
+nflows==0.14
+
+# data handling
+numpy>=1.23,<2
+pandas>=1.5
+scikit-learn>=1.2
+
+# plotting / notebooks (optional)
+matplotlib>=3.6
+seaborn>=0.12
+tqdm
+ipykernel
+jupyter

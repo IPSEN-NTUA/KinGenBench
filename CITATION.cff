@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite the paper below."
+type: software
+title: "A Benchmark for Generative Modeling of High-Dimensional Enzyme Kinetic Parameters of Metabolic Networks"
+authors:
+  - family-names: Xenios
+    given-names: Stefanos
+    orcid: "https://orcid.org/0009-0000-5688-363X"
+    affiliation: "National Technical University of Athens"
+  - family-names: Doulaveris
+    given-names: Alexandros
+    affiliation: "National Technical University of Athens"
+  - family-names: Trokanas
+    given-names: Nikos
+    affiliation: "National Technical University of Athens"
+  - family-names: Mexis
+    given-names: Konstantinos
+    affiliation: "National Technical University of Athens"
+  - family-names: Kokossis
+    given-names: Antonis
+    affiliation: "National Technical University of Athens"
+repository-code: "https://github.com/stefanosxenios/TODO-repo-name"
+license: MIT
+preferred-citation:
+  type: article
+  title: "A Benchmark for Generative Modeling of High-Dimensional Enzyme Kinetic Parameters of Metabolic Networks"
+  authors:
+    - family-names: Xenios
+      given-names: Stefanos
+    - family-names: Doulaveris
+      given-names: Alexandros
+    - family-names: Trokanas
+      given-names: Nikos
+    - family-names: Mexis
+      given-names: Konstantinos
+    - family-names: Kokossis
+      given-names: Antonis
+  journal: "TODO - fill in journal name"
+  year: 2026
+  doi: "TODO - fill in DOI once published"

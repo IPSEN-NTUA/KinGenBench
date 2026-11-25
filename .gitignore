@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Generated locally or downloaded from Zenodo
+outputs/
+data/scenarios/
+results/paper_figures/
+*.hdf5
+*.h5
+logs/
+
+# keep the published metric tables
+!results/metrics/
